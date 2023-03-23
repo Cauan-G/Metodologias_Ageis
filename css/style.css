@@ -1,28 +1,30 @@
 *{
     margin: 1px;
+    padding: 0;
 }
 
 body{
-    background-color: black;
-    align-items: center;
+    background: url('/img/Rio.jpg') fixed;
     position: relative;
+    align-items: center;
 }
 
 #menu{
-    background-color: whitesmoke;
-    position: relative;
-    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #091210;
     position: sticky;
-    top: 0;
-    padding: 10px;
+    top: 15px;
+    padding: 5px;
     width: 50%;
-    border-radius: 18px;
+    border-radius: 35px;
 }
 
 #menu a{
     text-decoration: none;
-    background-color: blue;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     padding: 10px;
     margin: 5px;
     border-radius: 20px;
@@ -30,32 +32,63 @@ body{
     align-items: center;
 }
 
-h1, h2, p{
-    color: bisque;
+#menu a:hover{
+    background-color: blue;
+    color: whitesmoke;
 }
 
 h1, h2{
-    
-    justify-content: center;
+    margin-top: 20px;
+    padding: 5px;
     text-align: center;
-
+    color: whitesmoke;
 }
 
 #principal{
+    display: block;
     background-image: url('/img/Rio.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    width: 100%;
+}
+#principal h1{
+    margin-top: 30vh;
+
 }
 
 #historia, #principal, #turisticos, #eventos{
-    width: 100%;
-    height: 600px;
+    height: 620px;
 }
 
-#historia p{
+#historia, #turisticos, #eventos{
+    background-color:  black;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* #historia  */
+p{
     text-align: justify;
-    margin: 40px;
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.rodape{
+    background-color: black;
+}
+
+
+.rodape ul{
+    justify-content: center;
+    display: flex;
+}
+
+.rodape ul li{
+    display: inline-block;
+    margin: 0 0 0 15px; 
+    border: whitesmoke 1px solid;
 }

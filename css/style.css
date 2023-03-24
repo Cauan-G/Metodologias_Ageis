@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url('/img/Rio.jpg') fixed;
+    background: url(../img/Rio.jpg) fixed;
     position: relative;
     align-items: center;
 }
@@ -46,7 +46,7 @@ h1, h2{
 
 #principal{
     display: block;
-    background-image: url('/img/Rio.jpg');
+    background-image: url(../img/Rio.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

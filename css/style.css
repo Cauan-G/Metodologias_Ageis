@@ -38,10 +38,12 @@ body{
 }
 
 h1, h2{
+    font-family: 'Encode Sans SC';
     margin-top: 20px;
     padding: 5px;
     text-align: center;
     color: whitesmoke;
+    font-size: 40px;
 }
 
 #principal{
@@ -59,7 +61,9 @@ h1, h2{
 }
 
 #historia, #principal, #turisticos, #eventos{
-    height: 620px;
+    min-height: 620px;
+    height: fit-content;
+    padding: 40px;
 }
 
 #historia, #turisticos, #eventos{
@@ -69,12 +73,13 @@ h1, h2{
     margin-right: 10%;
 }
 
-/* #historia  */
-p{
+#historia  p{
+    font-family: 'Inter';
     text-align: justify;
     color: whitesmoke;
     margin: 10px;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px;
 }
 
 .rodape{
@@ -91,4 +96,73 @@ p{
     display: inline-block;
     margin: 0 0 0 15px; 
     border: whitesmoke 1px solid;
+}
+
+#eventos{
+    align-items: center;
+}
+
+.conteudo{
+    display: inline-flex;
+    align-items: center;
+}
+
+.carta{
+    margin-top: 200px;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 260px;
+    height: 290px;
+    background: #fff;
+    border-radius: 24%;
+}
+
+.carta:hover{
+    scale: 1.05;
+    filter: drop-shadow(0 0 30px);
+}
+
+.carta #corno{
+    position: absolute;
+    top: -80px;
+    left: 12.5%;
+    width: 75%;
+    border-radius: 30%;
+
+    filter: drop-shadow(0 0 20px);
+}
+
+.carta .info{
+    margin-top: 85px;
+    padding: 0 24px;
+    text-align: left;
+}
+
+.carta .info h3{
+    color: #091210;
+    font-size: 32px;
+}
+
+.carta .info p{
+    color: #091210;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 6px;
+    border-radius: 50%;
+}
+
+.carta a{
+    position: absolute;
+    left: 98px;
+    bottom: -32px;
+    border: 3px whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(112deg, #fe8c30 15%, #ff356d 100%);
+}
+
+.seta{
+    width: 50px;
+    border-radius: 50%;
 }

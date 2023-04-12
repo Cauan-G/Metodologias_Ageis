@@ -306,6 +306,10 @@ footer {
     width: 93%;
     max-height: 52%;
   }
+  #turisticos .seg .imagem {
+    position: absolute;
+    top: -120px;
+  }
   .rodape h2 {
     font-size: 20px;
   }

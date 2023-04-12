@@ -1,321 +1,340 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  position: relative;
+  align-items: center;
+}
+
+section {
+  margin-top: 1px;
+}
+
+#menu {
+  z-index: 10;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  position: sticky;
+  top: 15px;
+  padding: 5px;
+  width: 50%;
+  border-radius: 35px;
+}
+
+#menu a {
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu a:hover {
+  background-color: #f8ad4b;
+  color: whitesmoke;
+}
+
+h1,
+h2 {
+  font-family: "Encode Sans SC";
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-size: 45px;
+}
+
+#principal {
+  display: block;
+  background-image: url(../img/Rio.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#principal h1,
+#principal h2,
+.rodape h2 {
+  color: white;
+}
+
+#principal h1 {
+  margin-top: 30vh;
+}
+
+#historia,
+#principal,
+#turisticos,
+#eventos {
+  min-height: 620px;
+  height: fit-content;
+  padding: 30px;
+}
+
+#historia,
+#turisticos,
+#eventos {
+  background-color: #7de1ff;
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#historia p {
+  font-family: "Inter";
+  text-align: justify;
+  margin: 10px;
+  font-size: 20px;
+  padding: 15px;
+  border-top: 1px white groove;
+}
+
+.rodape {
+  background-color: black;
+}
+
+.rodape ul {
+  justify-content: center;
+  display: flex;
+}
+
+.rodape ul li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  border: whitesmoke 1px solid;
+}
+
+#eventos,
+#turisticos {
+  justify-content: center;
+}
+#turisticos .conteudo {
+  display: inline-block;
+}
+
+#turisticos .carta {
+  margin-top: 180px;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 350px;
+  height: 400px;
+  background: #fff;
+  border-radius: 25%;
+  display: flex;
+}
+
+#turisticos .carta:hover {
+  scale: 1.05;
+}
+
+#turisticos .carta .imagem {
+  position: absolute;
+  top: -80px;
+  left: 6%;
+  width: 85%;
+  max-height: 40%;
+  border-radius: 30%;
+  filter: drop-shadow(0 0 20px);
+}
+
+#turisticos .carta .info {
+  margin-top: 90px;
+  padding: 0 24px;
+  text-align: left;
+}
+
+#turisticos .carta .info h3 {
+  color: #091210;
+  font-size: 32px;
+}
+
+#turisticos .carta .info p {
+  color: #091210;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 6px;
+  border-radius: 50%;
+}
+
+#eventos .conteudo {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+#eventos .carta {
+  margin-top: 200px;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 290px;
+  height: 400px;
+  background: #fff;
+  border-radius: 24%;
+  display: flex;
+}
+
+#eventos .carta:hover {
+  scale: 1.05;
+  filter: drop-shadow(0 0 30px);
+}
+
+#eventos .carta .imagem {
+  position: absolute;
+  top: -80px;
+  left: 8%;
+  width: 82%;
+  max-height: 40%;
+  border-radius: 30%;
+  filter: drop-shadow(0 0 20px);
+}
+
+#eventos .carta .info {
+  margin-top: 85px;
+  padding: 0 24px;
+  text-align: left;
+}
+
+#eventos .carta .info h3 {
+  color: #091210;
+  font-size: 32px;
+}
+
+#eventos .carta .info p {
+  color: #091210;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 6px;
+  border-radius: 50%;
+}
+
+#eventos .carta a {
+  position: absolute;
+  left: 80%;
+  bottom: -27px;
+  border: 3px whitesmoke;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(112deg, #fe8c30 15%, #f8ad4b 100%);
+}
+
+#eventos .seta {
+  width: 50px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: rgb(123, 184, 121);
+}
+
+.rodape p {
+  color: whitesmoke;
+  align-items: center;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  #menu {
+    top: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background: rgb(255, 255, 255);;
-    position: relative;
-    align-items: center;
-}
-
-section{
-    margin-top: 1px;
-}
-
-#menu{
-    z-index: 10;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    position: sticky;
-    top: 15px;
-    padding: 5px;
-    width: 50%;
-    border-radius: 35px;
-}
-
-#menu a{
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: black;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu a:hover{
-    background-color: #f8ad4b;
-    color: whitesmoke;
-}
-
-h1, h2{
-    font-family: 'Encode Sans SC';
-    margin-top: 20px;
-    padding: 5px;
-    text-align: center;
-    font-size: 45px;
-}
-
-#principal{
-    display: block;
-    background-image: url(../img/Rio.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-}
-
-#principal h1, #principal h2, .rodape h2{
-    color: white;
-}
-
-#principal h1{
-    margin-top: 30vh;
-}
-
-#historia, #principal, #turisticos, #eventos{
-    min-height: 620px;
-    height: fit-content;
-    padding: 30px;
-}
-
-#historia, #turisticos, #eventos{
-    background-color:  #7de1ff;
-    border-radius: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#historia  p{
-    font-family: 'Inter';
-    text-align: justify;
-    margin: 10px;
+    border-radius: 0;
+    margin: 0;
+  }
+  #historia,
+  #turisticos,
+  #eventos {
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 1px solid white;
+  }
+  #historia,
+  #principal,
+  #turisticos,
+  #eventos {
+    min-height: fit-content;
+    width: 100%;
+    margin: 0;
+  }
+  #principal {
+    height: 700px;
+  }
+  .rodape h2 {
     font-size: 20px;
-    padding: 15px;
-    border-top: 1px white groove;
+  }
 }
 
-.rodape{
-    background-color: black;
-}
-
-
-.rodape ul{
-    justify-content: center;
-    display: flex;
-}
-
-.rodape ul li{
-    display: inline-block;
-    margin: 0 0 0 15px; 
-    border: whitesmoke 1px solid;
-}
-
-#eventos, #turisticos{
-    justify-content: center;
-}
-#turisticos .conteudo{
-    display: inline-block;
-}
-
-#turisticos .carta{
-    margin-top: 180px;
-    position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 350px;
-    height: 400px;
-    background: #fff;
-    border-radius: 25%;
-    display: flex;
-}
-
-#turisticos .carta:hover{
-    scale: 1.05;
-}
-
-#turisticos .carta .imagem{
+@media only screen and (min-width: 100px) and (max-width: 430px) {
+    #principal{
+        height: 600px;
+    }
+  #historia,
+  #principal,
+  #turisticos,
+  #eventos {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #menu {
+    width: 100%;
+  }
+  #turisticos .carta {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: fit-content;
+    padding-bottom: 15px;
+    border-radius: 25px;
+  }
+  #turisticos .carta .imagem {
     position: absolute;
-    top: -80px;
-    left: 6%;
-    width: 85%;
-    max-height: 40%;
-    border-radius: 30%;
-    filter: drop-shadow(0 0 20px);
+    top: -110px;
+    left: 3%;
+    width: 93%;
+    max-height: 52%;
+  }
+  .rodape h2 {
+    font-size: 20px;
+  }
+  .rodape ul li {
+    margin: 0;
+  }
+  #eventos {
+    padding-bottom: 80px;
+  }
 }
 
-#turisticos .carta .info{
-    margin-top: 90px;
-    padding: 0 24px;
-    text-align: left;
-}
-
-#turisticos .carta .info h3{
-    color: #091210;
-    font-size: 32px;
-}
-
-#turisticos .carta .info p{
-    color: #091210;
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 6px;
-    border-radius: 50%;
-}
-
-#eventos .conteudo{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-#eventos .carta{
-    margin-top: 200px;
-    position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 290px;
-    height: 400px;
-    background: #fff;
-    border-radius: 24%;
+@media only screen and (min-width: 100px) and (max-width: 330px) {
+  #eventos .carta {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 90%;
+    height: fit-content;
+    padding-bottom: 15px;
+    border-radius: 7%;
     display: flex;
-}
-
-#eventos .carta:hover{
-    scale: 1.05;
-    filter: drop-shadow(0 0 30px);
-}
-
-#eventos .carta .imagem{
-    position: absolute;
-    top: -80px;
-    left: 8%;
-    width: 82%;
-    max-height: 40%;
-    border-radius: 30%;
-    filter: drop-shadow(0 0 20px);
-}
-
-#eventos .carta .info{
-    margin-top: 85px;
-    padding: 0 24px;
-    text-align: left;
-}
-
-#eventos .carta .info h3{
-    color: #091210;
-    font-size: 32px;
-}
-
-#eventos .carta .info p{
-    color: #091210;
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 6px;
-    border-radius: 50%;
-}
-
-#eventos .carta a{
+  }
+  #eventos .carta a {
     position: absolute;
     left: 80%;
-    bottom: -27px;
-    border: 3px whitesmoke;
-    border-radius: 50%;
-    text-align: center;
-    background: linear-gradient(112deg, #fe8c30 15%, #f8ad4b 100%);
+    bottom: -35px;
+  }
+  #eventos {
+    padding-bottom: 80px;
+  }
 }
 
-#eventos .seta{
-    width: 50px;
-    border-radius: 50%;
-}
-
-footer{
-    background-color: rgb(123, 184, 121);;
-}
-
-.rodape p{
-    color: whitesmoke;
-    align-items: center;
-}
-
-@media only screen and (min-width:400px) and (max-width:800px){
-        #menu{
-        top: 0;
-        padding: 0;
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-    }
-    #historia, #turisticos, #eventos{
-        border-radius: 0;
-        margin-left: 0;
-        margin-right: 0;
-        border-top: 1px solid white;
-    }
-    #historia, #principal, #turisticos, #eventos{
-        min-height: fit-content;
-        width: 100%;
-        margin: 0;
-    }
-    #principal{
-        height: 490px;
-    }
-    .rodape h2{
-        font-size: 20px;
-    }
-}
-
-@media only screen and (min-width:100px) and (max-width:400px){
-    #historia, #principal, #turisticos, #eventos{
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-        border-radius: 5px;
-    }
-    #menu{
-        width: 100%;
-    }
-    #turisticos .carta{
-        margin-right: 5px;
-        margin-left: 5px;
-        width: 90%;
-        height: fit-content;
-        padding-bottom: 15px;
-        border-radius: 25px;
-    }
-    #turisticos .carta .imagem{
-        position: absolute;
-        top: -110px;
-        left: 3%;
-        width: 93%;
-        max-height: 52%;
-    }
-    .rodape h2{
-        font-size: 20px;
-    }
-    .rodape ul li{
-        margin: 0; 
-    }
-    #eventos{
-        padding-bottom: 80px;
-    }
-}
-
-
-@media only screen and (min-width:100px) and (max-width:330px){
-    #eventos .carta{
-        margin-right: 5px;
-        margin-left: 5px;
-        width: 90%;
-        height: fit-content;
-        padding-bottom: 15px;
-        border-radius: 7%;
-        display: flex;
-    }
-    #eventos .carta a{
-        position: absolute;
-        left: 80%;
-        bottom: -35px;
-    }
-    #eventos{
-        padding-bottom: 80px;
-    }
-}
 

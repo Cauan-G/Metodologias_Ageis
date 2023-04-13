@@ -101,6 +101,7 @@ h2 {
 
 .rodape {
   background-color: black;
+  flex-wrap: wrap;
 }
 
 .rodape ul {
@@ -112,6 +113,13 @@ h2 {
   display: inline-block;
   margin: 0 0 0 15px;
   border: whitesmoke 1px solid;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #eventos,
@@ -358,3 +366,20 @@ footer {
 }
 
 
+@media only screen and (min-height: 800px) and (max-height: 1150px) {
+  #principal{
+    height: 900px;
+  }
+  #historia p{
+    font-size: 35px;
+  }
+  #principal h1,#principal h2{
+    font-size: 50px;
+  }
+  
+}
+@media only screen and (min-width: 500px) and (min-height: 800px) and (max-height: 1150px){
+  .rodape p{
+    font-size: 30px;
+  }
+}

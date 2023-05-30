@@ -19,12 +19,11 @@ section {
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: #000;
+  background-color: white;
   position: sticky;
-  top: 15px;
+  top: 0px;
   padding: 5px;
-  width: 50%;
-  border-radius: 35px;
+  width: 100%;
 }
 
 #menu a {
@@ -60,7 +59,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 75vh;
+  min-height: 100vh;
   height: fit-content;
   padding: 30px;
 }
@@ -82,14 +81,25 @@ h2 {
   height: fit-content;
   padding: 30px;
 }
-
+/* 
 #historia,
 #turisticos,
 #eventos {
   background-color: #7de1ff;
-  border-radius: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
+} */
+
+#historia{
+  border: 1px solid black;
+  width: 70%;
+  margin-left: 30%;
+  right: 30%;
+  left: 0;
+}
+
+#historia h1{
+  position: absolute;
+  left: 0;
+  margin-top: 17%;
 }
 
 #historia p {
